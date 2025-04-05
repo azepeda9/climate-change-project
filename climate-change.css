@@ -1,0 +1,202 @@
+/* GLOBAL STYLES */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7fafc;
+    color: #222;
+    overflow-x: hidden;
+  }
+  
+ /* HEADER / TITLE */
+header {
+    background: linear-gradient(to right, #48c6ef, #6f86d6);
+    color: white;
+    padding: 6rem 1rem 2.5rem; /* ⬅️ increased top padding */
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+    letter-spacing: 1px;
+    z-index: 800;
+  }
+  
+  .burger {
+    position: absolute;
+    top: 50%;
+    left: 1rem;
+    transform: translateY(-50%);
+    font-size: 1.8rem;
+    background-color: #ffffff33;
+    padding: 0.4rem 0.8rem;
+    border-radius: 8px;
+    cursor: pointer;
+    z-index: 1100;
+    transition: background 0.3s ease;
+  }
+  
+  
+  
+  .burger:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+  
+  /* DROPDOWN MENU */
+  .dropdown-menu {
+    position: absolute;
+    top: 70px;
+    left: 1rem;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    padding: 1rem;
+    border-radius: 10px;
+    display: none;
+    flex-direction: column;
+    z-index: 1100;
+    width: 200px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  }
+  
+  .dropdown-menu a {
+    color: #333;
+    text-decoration: none;
+    padding: 0.5rem 0;
+    font-size: 1rem;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .dropdown-menu a:last-child {
+    border-bottom: none;
+  }
+  
+  .dropdown-menu a:hover {
+    color: #48c6ef;
+  }
+  
+  .show {
+    display: flex !important;
+  }
+  
+  /* WORLD IMAGE SECTION */
+  .image-nav-wrapper {
+    position: relative;
+  }
+  
+  .world-image {
+    width: 100%;
+    height: auto;
+  }
+  
+  .world-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+  }
+  
+  /* STICKY NAVBAR THAT STAYS ON TOP */
+  nav.sticky-navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #ffffffee;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    z-index: 1000;
+    backdrop-filter: blur(8px);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  }
+  
+  nav.sticky-navbar button {
+    background-color: #0077cc;
+    color: #fff;
+    border: none;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 0.6rem 1.4rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  }
+  
+  nav.sticky-navbar button:hover {
+    background-color: #00b894;
+    color: #fff;
+    transform: translateY(-2px);
+  }
+  
+  
+  /* ADJUST SPACING BELOW STICKY NAVBAR */
+  .scroll-section {
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 7rem 1rem 2rem; /* pushed down to account for sticky nav */
+    scroll-behavior: smooth;
+    background-color: #ecf3f8;
+  }
+  
+  /* CARD STYLES */
+  .card {
+    display: inline-block;
+    background-color: #ffffff;
+    width: 280px;
+    margin: 0 1rem;
+    border-radius: 16px;
+    padding: 1rem;
+    vertical-align: top;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    white-space: normal;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(72, 198, 239, 0.25);
+  }
+  
+  .card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 0.6rem;
+  }
+  
+  .card h2 {
+    margin: 0.5rem 0 0.3rem;
+    font-size: 1.2rem;
+    color: #0077cc;
+  }
+  
+  .card p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: #444;
+    margin: 0.3rem 0 0;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+  
+  /* FOOTER */
+  footer {
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 1.2rem;
+    font-size: 0.95rem;
+    color: #666;
+    margin-top: 2rem;
+    border-top: 1px solid #ccc;
+  }
+  
+  footer::before {
+    content: "⬆️";
+    display: block;
+    font-size: 1.2rem;
+    color: #00b894;
+    margin-bottom: 0.3rem;
+  }
