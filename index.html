@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Climate Crisis App</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="climate_crisis2.css" />
+</head>
+<body>
+
+  <header>
+    <div class="burger" onclick="toggleMenu()">☰</div>
+    🌍 Climate Crisis Around the World
+    <div id="dropdown" class="dropdown-menu">
+      <a href="#">Log In</a>
+      <a href="#">Volunteer</a>
+      <a href="#">Our History</a>
+      <a href="#">About Us</a>
+      <a href="#">Contact Us</a>
+    </div>
+  </header>
+
+  <div class="image-nav-wrapper">
+    <div class="world-image">
+      <img src="https://www.peoplesworld.org/wp-content/uploads/2021/10/Climate-Strike.jpg" alt="Earth Image">
+    </div>
+
+    <nav class="sticky-navbar">
+      <button>Our Mission</button>
+      <button>Crisis</button>
+      <button>Resources</button>
+      <button>Donations</button>
+      <button>Partners</button>
+      <button>More</button>
+    </nav>
+  </div>
+
+  <section class="scroll-section">
+    <div class="card">
+      <h2>🔥 California Wildfires</h2>
+      <img src="https://ca-times.brightspotcdn.com/dims4/default/242d2b5/2147483647/strip/true/crop/5842x3895+0+0/resize/1200x800!/format/webp/quality/75/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F7f%2F46%2Ff5c5b8714dadb8b70f8ec0bd2074%2Fcalifornia-wildfires-23877.jpg" alt="California Wildfires" />
+      <p>In early 2025, Southern California experienced a number of fires with historic amounts of damage totaling over $250 billion and over 57,000 acres of land.</p>
+    </div>
+    <div class="card">
+      <h2>🌊 Venice Flooding</h2>
+      <img src="https://compote.slate.com/images/e08f4a4d-9bf4-40ed-a907-dfe90e9a9eb6.jpeg?crop=2250%2C1500%2Cx0%2Cy0&width=2200" alt="Venice flooding" />
+      <p>Rising sea levels are flooding Venice regularly, threatening its future. In November of 2019, Venice experienced a string of non stop floods for a whole week.</p>
+    </div>
+    <div class="card">
+      <h2>🌡 Middle East Heatwaves</h2>
+      <img src="https://pbs.twimg.com/media/Cn8RENLUsAAxJUx?format=jpg&name=medium" alt="Heatwave" />
+      <p>Currently, temperatures in some areas already exceed 50°C, disrupting life and increasing health risks. It is expected that the Middle East will experience extreme temperatures around 200 days per year.</p>
+    </div>
+    <div class="card">
+      <h2>🌊Rising Sea Levels</h2>
+      <img src="https://mediaproxy.salon.com/width/1200/https://media2.salon.com/2023/11/florida_waves_buildings_1333283465.jpg" alt="Cyclone" alt="Cyclone" />
+      <p>In recent years, the rate of sea level rise has been increasing. This is due to a number of reasons including melting ice sheets and glaciers and sea water thermal expansion.</p>
+    </div>
+    <div class="card">
+      <h2>🌾 Horn of Africa Drought</h2>
+      <img src="https://www.unicef.org/sites/default/files/styles/hero_extended/public/UN0607653_1.jpg.webp?itok=eQ_L_BKN" alt="Drought" />
+      <p>From 2020-2023 a severe drought hit the countries of Somalia, Ethiopia, and Kenya. The rainy season of 2022 was the driest on record in over 40 years and caused an estimated 43,000 deaths.</p>
+    </div>
+    <div class="card">
+      <h2>🐠 Coral Bleaching</h2>
+      <img src="https://www.barrierreef.org/generated/1280w-3-2/-11.jpg?1634330794" alt="Coral Reef" />
+      <p>The Great Barrier Reef is dying due to marine heatwaves and coral bleaching. When water is too warm, corals expel the algae living in their tissues causing the coral to turn completely white.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>Built by Pablo Herrarte and Alexander Zepeda • SFSU • 2025</p>
+  </footer>
+
+  <script>
+    const menu = document.getElementById("dropdown");
+    const burger = document.querySelector(".burger");
+  
+    function toggleMenu() {
+      menu.classList.toggle("show");
+    }
+  
+    // Added this to help close burger button by clicking anywhere🙈
+    window.addEventListener("click", function (e) {
+      if (!menu.contains(e.target) && !burger.contains(e.target)) {
+        menu.classList.remove("show");
+      }
+    });
+  </script>
+  
+
+</body>
+</html>
