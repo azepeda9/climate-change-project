@@ -76,13 +76,16 @@
   </footer>
 
   <script>
+    //This selects the burger menu button and dropdown menu
     let burgerButton = document.querySelector(".burger");
     let dropdownMenu = document.getElementById("dropdown");
 
+    //Toggles the dropdown menu
     function toggleMenu() {
       dropdownMenu.classList.toggle("show");
     }
-
+    //Looks for clicks anywhere on the screen
+    //If click found outside burger menu it closes it
     window.addEventListener("click", function (e) {
       if (!dropdownMenu.contains(e.target) && !burgerButton.contains(e.target)) {
         dropdownMenu.classList.remove("show");
